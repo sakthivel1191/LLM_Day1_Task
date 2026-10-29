@@ -1,0 +1,15 @@
+import tiktoken
+sentence = "Artificial intelligence is useful for learning Python."
+encoding1 = tiktoken.get_encoding("cl100k_base")
+encoding2 = tiktoken.get_encoding("o200k_base")
+tokens1 = encoding1.encode(sentence)
+tokens2 = encoding2.encode(sentence)
+print("Sentence:", sentence)
+print("\nTokenizer 1: cl100k_base")
+print("Token count:", len(tokens1))
+print("Token IDs:", tokens1)
+print("Token pieces:", encoding1.decode_tokens_bytes(tokens1))
+print("\nTokenizer 2: o200k_base")
+print("Token count:", len(tokens2))
+print("Token IDs:", tokens2)
+print("Token pieces:", encoding2.decode_tokens_bytes(tokens2))
