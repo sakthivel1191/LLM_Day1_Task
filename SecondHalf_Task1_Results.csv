@@ -1,0 +1,22 @@
+﻿Task,Prompt,Answer,Rating,Prompt Tokens,Answer Tokens,Total Text Tokens,Time (seconds),Improvement
+Summarisation,"Summarise this text in two sentences:
+
+ABC Company started a work-from-home policy in January.
+Employees can work remotely three days a week.
+The policy aims to improve work-life balance and reduce travel costs.
+Managers review employee performance every month.
+","ABC Company introduced a work-from-home policy in January, allowing employees to work remotely three days a week to improve work-life balance and reduce travel costs. Managers review employee performance every month to monitor progress.",5,49,40,89,Not measured,Include all important points in fewer words.
+Classification,"Classify this feedback as Positive, Negative, or Neutral and give one reason: The new policy saves travel time, but internet problems reduce productivity.","Classification: Neutral — The policy saves travel time, but internet problems negatively affect productivity.",3,29,17,46,Not measured,Check whether the classification matches the feedback.
+Extraction,"Extract the company name, start month, remote work days per week, and review frequency from this text:
+
+ABC Company started a work-from-home policy in January.
+Employees can work remotely three days a week.
+The policy aims to improve work-life balance and reduce travel costs.
+Managers review employee performance every month.
+","- Company Name: ABC Company
+- Start Month: January
+- Remote Work Days per Week: 3 days
+- Review Frequency: Every month",3,61,30,91,Not measured,Verify the extracted details against the original text.
+Translation,Translate this sentence into Tamil: Employees can work remotely three days a week.,,1,15,0,15,Not measured,Check the translation's grammar and meaning.
+Code Generation,Write a Python function called calculate_total that accepts a list of prices and returns their sum. Include a simple example.,"def calculate_total(prices):
+    return sum(prices)",1,23,12,35,# Example,Run the code and test different price lists.
